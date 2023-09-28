@@ -9,5 +9,11 @@ pipeline {
                 '''
             }
         }
+        stage ('2-John') {
+            steps {
+                sh 'ps -ef' 
+                sh 'sudo systemctl status jenkins'
+            }
+        }
     }
 }
