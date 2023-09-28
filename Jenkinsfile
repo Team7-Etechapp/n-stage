@@ -13,5 +13,11 @@ pipeline {
                 sh 'sudo systemctl status jenkins'
             }
         }
+        stage ('3-Judith') {
+            steps {
+                sh 'ps -ef' 
+                sh 'sudo systemctl status jenkins'
+            }
+        }
     }
 }
