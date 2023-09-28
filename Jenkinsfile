@@ -3,10 +3,8 @@ pipeline {
     stages {
         stage ('1-Sherack') {
             steps {
-                sh '''
-                ps -ef
-                sudo systemctl status jenkins
-                '''
+                sh 'ps -ef'
+                sh 'sudo systemctl status jenkins'
             }
         }
         stage ('2-John') {
