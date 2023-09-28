@@ -19,5 +19,11 @@ pipeline {
                 sh 'sudo systemctl status jenkins'
             }
         }
+        stage ('4-abby') {
+            steps {
+                sh 'ps -ef' 
+                sh 'sudo systemctl status jenkins'
+            }
+        }
     }
 }
